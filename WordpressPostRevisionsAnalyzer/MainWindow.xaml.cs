@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WordPressPCL;
+using WordPressPCL.Models;
 
 namespace WordpressPostRevisionsAnalyzer
 {
@@ -24,5 +26,12 @@ namespace WordpressPostRevisionsAnalyzer
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            RestClient.UseRestClient();
+        }
+
+        
     }
 }
